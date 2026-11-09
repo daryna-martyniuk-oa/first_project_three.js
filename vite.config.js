@@ -2,9 +2,7 @@ import restart from 'vite-plugin-restart'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './', 
-})
-export default {
+    base: './', 
     root: 'src/', 
     publicDir: '../static/', 
     server:
@@ -22,4 +20,4 @@ export default {
     [
         restart({ restart: [ '../static/**', ] }) 
     ],
-}
+})
